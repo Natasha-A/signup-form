@@ -1,0 +1,184 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+  font-family: 'Friends-Black';
+  font-size: 32px;
+  background-color: #eef3fc;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Form Styles */ 
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: 'Friends-Black';
+  src: url("./fonts/Friends-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Friends-Normal';
+  src: url("./fonts/Friends-Normal.otf") format("opentype");
+}
+
+.splashimage-section {
+  background-color: grey;
+  width: 40%;
+  color: white;
+  background: url("./assets/sacha-verheij-5bwgW8_9OPs-unsplash.jpg")  left center;
+  background-size: cover;
+}
+
+.splash-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  margin-top: 200px;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.084);
+  padding: 30px;
+}
+
+
+.signup-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.signup-form {
+  display: flex;
+  width: 60%;
+  height: 50%;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 80px;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.header-text {
+  font-size: 1.5em;
+  text-align: center;
+  color:#5597da;
+}
+
+.signup-form h3 {
+  color:rgb(106, 106, 106);
+
+}
+.signup-form p {
+  font-family: 'Friends-Normal';
+  font-size: 0.7em;
+  color:rgb(140, 138, 138);
+}
+
+form label {
+  color:rgb(140, 138, 138);
+}
+.form {
+  display: flex;
+  font-size: 0.5em;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.form-row, .form-row-button {
+  display: flex;
+  flex-direction: column;
+  margin-bottom:40px;
+  width: 100%;
+
+}
+
+.form-row label {
+  font-size: 1.4rem;
+  font-family: 'Friends-Normal';
+  margin-bottom:10px;
+
+}
+
+.form-row input  {
+  background-color: #FFFFFF;
+  border: 1.5px solid #D6D9DC;
+  border-radius: 3px;
+  padding: 14px;
+  
+}
+
+.form-col {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.form-row-button {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 18px 85px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  font-size: 1em;
+  display: flex;
+  border-radius: 33px;
+  margin-top: 15px;
+  background-color: #4d97e1;
+  color: white;
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+}

@@ -4,21 +4,81 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock Paper Scissors</title>
+  <title>Sunrise Airways</title>
 
-  <link rel="stylesheet" href="./node_modules/normalize.css" />
+  <link rel="stylesheet" href="./styles.css" />
 
 </head>
 
 <body>
-  <div class="splashimage-section">
-    <div class="splash-header">
-      <div id="splash-logo"><h1>Sunrise Airways</h1></div>
+  <div class="main-container">
+    <div class="splashimage-section">
+      <div class="splash-header">
+        <div id="splash-logo"><embed src="./assets/airlineslogo.svg" /></div>
+        <h1>Sunrise Airways</h1>
+      </div>
     </div>
-  </div>
+  
+    <div class="signup-section">
+      <div class="signup-form">
+        <div class="header-text">Ready for take off?</div>
+        <h3>Sign Up</h3>
+        <p>Create an account to access all of the booking features.</p>
+        <div class="form-content">
+          <form action="" method="post">
 
-  <div class="signup-section">
-    <div class="signup-form">
+            <div class="form-col">
+              <div class="form-row">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" required/>
+              </div>
+
+              <div class="form-row">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" required/>
+              </div>
+            </div>
+
+
+            <div class="form-col">
+              <div class="form-row">
+                <label for="emailAddress">Email Address</label>
+                <input type="email" id="emailAddress" required/>
+              </div>
+  
+              <div class="form-row">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber" required/>
+              </div>
+            </div>
+
+            <div class="form-col">
+              <div class="form-row">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>  
+              </div>
+  
+  
+              <div class="form-row">
+                <label for="passwordConfirm">Confirm Password</label>
+                <input type="password" id="passwordConfirm" required>
+              </div>
+            </div>
+
+            <div class="form-row-button">
+              <div></div>
+            <button type="submit">Submit</button>
+            <div></div>
+
+            </div>
+
+
+
+          </form>
+
+
+        </div>
+      </div>
     </div>
   </div>
 
