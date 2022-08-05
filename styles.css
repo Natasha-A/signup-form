@@ -19,6 +19,10 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+:root {
+  --font-colour: #4d97e1;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -46,6 +50,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
 
 /* Form Styles */ 
 .main-container {
@@ -105,7 +111,7 @@ table {
 .header-text {
   font-size: 1.5em;
   text-align: center;
-  color:#5597da;
+  color:var(--font-colour);
 }
 
 .signup-form h3 {
@@ -134,7 +140,6 @@ form label {
   flex-direction: column;
   margin-bottom:40px;
   width: 100%;
-
 }
 
 .form-row label {
@@ -148,7 +153,9 @@ form label {
   background-color: #FFFFFF;
   border: 1.5px solid #D6D9DC;
   border-radius: 3px;
-  padding: 14px;
+  padding: 10px;
+  font-size: 0.6em;
+
   
 }
 
@@ -178,7 +185,8 @@ button, input[type="submit"], input[type="reset"] {
   display: flex;
   border-radius: 33px;
   margin-top: 15px;
-  background-color: #4d97e1;
+  background-color: var(--font-colour);
   color: white;
   box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
 }
+
