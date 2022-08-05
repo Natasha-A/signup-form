@@ -1,5 +1,5 @@
 # Sign-Up Form
-A sign up form designed for an Airways services to practice using HTML forms and best practices. View it [here!](https://natasha-a.github.io/etch-a-sketch/)
+A sign up form designed for an Airways services to practice using HTML forms and best practices. View it [here!](https://natasha-a.github.io/signup-form/)
 
 ## Objective
 * Practice HTML forms to utilize various elements and attributes to create effective forms
