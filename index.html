@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,9 @@
   <title>Sunrise Airways</title>
 
   <link rel="stylesheet" href="./styles.css" />
+
+  <script defer src="./script.js"></script>
+
 
 </head>
 
@@ -18,43 +22,46 @@
         <h1>Sunrise Airways</h1>
       </div>
     </div>
-  
+
     <div class="signup-section">
       <div class="signup-form">
         <div class="header-text">Ready for take off?</div>
         <h3>Sign Up</h3>
         <p>Create an account to access all of the booking features.</p>
         <div class="form-content">
-          <form action="" method="post">
+          <form id="signupForm" method="GET">
 
             <div class="form-col">
               <div class="form-row">
                 <label for="firstName">First Name</label>
-                <input type="text" id="firstName" required/>
+                <input type="text" id="firstName"  required/>
 
-                <div class="errorMessage"></div>
+                <div class="errorMessage" id="errfirstName"></div>
               </div>
 
               <div class="form-row">
                 <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" required/>
+                <input type="text" id="lastName"  required/>
+                <div class="errorMessage" id="errlastName"></div>
               </div>
-              <div class="errorMessage"></div>
             </div>
 
 
             <div class="form-col">
               <div class="form-row">
                 <label for="emailAddress">Email Address</label>
-                <input type="email" id="emailAddress" required/>
-                <div class="errorMessage"></div>
+                <input type="email" id="emailAddress" required />
+                <div class="errorMessage" id="errEmail"></div>
+                <p>Example: name@example.com</p>
               </div>
-              
-  
+
+
               <div class="form-row">
                 <label for="phoneNumber">Phone Number</label>
-                <input type="text" id="phoneNumber" required/>
-                <div class="errorMessage"></div>
+                <input type="text" id="phoneNumber"  required/>
+                <p></p>
+                <div class="errorMessage" id="errPhoneNumber"></div>
+                <p>Format: 123-456-7890</p>
               </div>
             </div>
 
@@ -62,29 +69,28 @@
               <div class="form-row">
                 <label for="password">Password</label>
                 <input type="password" id="password" required>
-                <div class="errorMessage"></div>  
+                <div class="errorMessage" id="errPassword"></div>
+                <p>Must be between 8-30 characters</p>
               </div>
-  
-  
+
+
               <div class="form-row">
                 <label for="passwordConfirm">Confirm Password</label>
                 <input type="password" id="passwordConfirm" required>
-                <div class="errorMessage"></div>
+                <div class="errorMessage" id="errorConfirmPW"></div>
               </div>
             </div>
 
             <div class="form-row-button">
               <div></div>
-            <button type="submit">Submit</button>
-            <div></div>
-
+              <button type="submit">Submit</button>
+              <div></div>
             </div>
-
           </form>
         </div>
       </div>
     </div>
   </div>
-
 </body>
+
 </html>

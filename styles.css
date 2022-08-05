@@ -21,7 +21,7 @@ time, mark, audio, video {
 }
 
 :root {
-  --font-colour: #4d97e1;
+  --font-colour: #5092d9;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -33,7 +33,7 @@ body {
 	line-height: 1;
   font-family: 'Friends-Black';
   font-size: 32px;
-  background-color: #eef3fc;
+  background-color: #dcedf9;
 }
 ol, ul {
 	list-style: none;
@@ -69,6 +69,11 @@ table {
   src: url("./fonts/Friends-Normal.otf") format("opentype");
 }
 
+@font-face {
+  font-family: 'Friends-SemiBold';
+  src: url("./fonts/Friends-SemiBold.otf") format("opentype");
+}
+
 .splashimage-section {
   background-color: grey;
   width: 40%;
@@ -99,7 +104,7 @@ table {
 .signup-form {
   display: flex;
   width: 60%;
-  height: 50%;
+  height: 7ss00px;
   background-color: white;
   border-radius: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -156,7 +161,11 @@ form label {
   padding: 10px;
   font-size: 0.6em;
 
-  
+}
+
+.form-row p {
+  font-size: 0.55em;
+  margin-top: 5px;
 }
 
 .form-col {
@@ -167,7 +176,7 @@ form label {
 
 .form-row-button {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -177,7 +186,7 @@ button, input[type="submit"], input[type="reset"] {
 	background: none;
 	color: inherit;
 	border: none;
-	padding: 18px 85px;
+	padding: 20px 90px;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
@@ -185,8 +194,73 @@ button, input[type="submit"], input[type="reset"] {
   display: flex;
   border-radius: 33px;
   margin-top: 15px;
-  background-color: var(--font-colour);
+background-image: linear-gradient(315deg, #407cdc 0%, #80badb 74%);
   color: white;
   box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
 }
 
+.errorMessage {
+  margin-top: 10px;
+  font-size: 0.6em;
+  font-family: 'Friends-SemiBold';
+  color: #D21E3C;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1400px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .splashimage-section {
+    background-color: grey;
+    width: 100%;
+    color: white;
+    background: url("./assets/sacha-verheij-5bwgW8_9OPs-unsplash.jpg")  left center;
+    background-size: cover;
+  }
+  
+  .splash-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.084);
+    padding: 30px;
+    margin-bottom: 10vh;
+  }
+  
+  
+  .signup-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    
+  }
+  
+  .signup-form {
+    display: flex;
+    width: 80vh;
+    height: 700px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 80px;
+    flex-direction: column;
+    gap: 20px;
+    transform: translate(0%, -10%);
+
+  }
+  
+  .header-text {
+    font-size: 1.5em;
+    text-align: center;
+    color:var(--font-colour);
+  }
+
+  
+}
