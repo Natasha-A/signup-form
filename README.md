@@ -10,6 +10,8 @@ A sign up form designed for an Airways services to practice using HTML forms and
 ## Sample Views 
 ![Image 1](./assets/signup_sample1.png)
 ![Image 2](./assets/signup_sample2.png)
+![Image 3](./assets/mobile-demo.png)
+
 
 ## Learning Outcomes 
 * Strong understanding of HTML form syntax and attributes
