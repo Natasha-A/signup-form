@@ -123,6 +123,8 @@ password.addEventListener('input', (e) => {
     messages.push("Make your password longer")
   } else if (password.value.length > 30) {
     messages.push("Password must be under 30 characters")
+    password.style.borderColor = "#D21E3C"
+
   } 
 
 
